@@ -1,18 +1,22 @@
 {
   "name": "ayl",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon -e js,css,html,hbs app.js"
+    "dev": "nodemon -e js,css,html,hbs app.js",
+    "hola": "node --version"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
     "handlebars": "^4.7.7",
-    "mongoose": "^6.4.4",
+    "hbs": "^4.2.0",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.4.5",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.19"
-  }
+  },
+  "description": ""
 }

@@ -1,0 +1,59 @@
+<form action="/product/create" method="POST"> 
+{{!-- en el formulario el action te indica la ruta a la que quieres que vaya --}}
+  <div class="col-md">
+
+    <div class="form-floating">
+      <input type="text" class="form-control" name="price">
+      <label for="floatingInputGrid">Precio</label>
+    </div>
+
+     <div class="form-floating">
+      <input type="text" class="form-control" name="title">
+      <label for="floatingInputGrid">Título</label>
+    </div>
+
+     <div class="form-floating">
+      <input type="text" class="form-control" name="description">
+      <label for="floatingInputGrid">Descripción</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" name="image">
+      <label for="floatingInputGrid">Imagen</label>
+    </div>
+
+
+
+    <div class="form-floating">
+      <select class="form-select" name="category">
+        <option selected value="">Categoría</option>
+        <option value="coches">Coches</option>
+        <option value="motos">Motos</option>
+        <option value="motor-accesorios">Motor y Accesorios</option>
+        <option value="moda-accesorios">Moda y Accesorios</option>
+        <option value="inmobiliaria">Inmobiliaria</option>
+        <option value="audiovisual">Tv,Audio y Foto</option>
+        <option value="moviles">Móviles y Telefonía</option>
+        <option value="informatica-electronica">Infomática y Electrónica</option>
+        <option value="deportes">Deporte y Ocio</option>
+        <option value="bicicletas">Bicicletas</option>
+        <option value="videojuegos">Consolas y Videojuegos</option>
+        <option value="hogar">Hogar y Jardín</option>
+        <option value="electrodomestios">Electrodomésticos</option>
+        <option value="cultura">Cine, Libros y Música</option>
+        <option value="puericultura">Niños y Bebés</option>
+        <option value="coleccionismo">Coleccionismo</option>
+        <option value="construccion">Materiales de  Construcción</option>
+        <option value="agricola">Industria y Agricultura</option>
+        <option value="empleo">Empleo</option>
+        <option value="servicios">Servicios</option>
+        <option value="otros">Otros</option>
+      </select>
+      <label for="floatingSelectGrid">Selecciona</label>
+    </div>
+
+  </div>
+  <button type="submit" class="btn btn-primary">Publicar</button>
+</form>
+
+{{errors.category}}

@@ -1,0 +1,43 @@
+{{!-- <h1>PRODUCTOS</h1>
+<p>{{ product.image }}</p>
+<p>{{ product.title }}</p>
+<p>{{ product.description }}</p>
+<p>{{ product.price }}</p> --}}
+{{!-- 
+<form action="/product/{{product.id}}/delete" method="post">
+    <button type="submit">Eliminar producto</button>
+</form> --}}
+
+{{!-- <button>
+    <a href="/products">Anuncios</a>
+</button> --}}
+
+
+
+<div class="card" style="width: 18rem;">
+  <img src="{{ product.image }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ product.price }}</li>
+  </ul>
+  <div class="card-body">
+    <button>
+        <a href="/products" class="card-link">Anuncios</a>
+    </button>
+  </div>
+
+<form action="/product/{{product.id}}/delete"  method="post">
+    <button type="submit">Delete task</button>
+</form>
+
+  {{!-- <div class="card-body">
+    <div class="card-body">
+    <form action="/product/{{product.id}}/delete" method="post">
+    <button type="button" class="btn btn-outline-danger">Eliminar</button>
+    </form>
+  </div>
+  </div> --}}
+</div>
